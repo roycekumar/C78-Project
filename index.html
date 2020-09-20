@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Family Book</title>
+    </head>
+  <body>
+      <center>
+    <p id="firstp">The Family Book</p>
+    
+   <img id="album"
+        src="https://images-na.ssl-images-amazon.com/images/I/51cNIA0kXNL._AC_UL600_SR600,600_.jpg">
+    <div>
+            <p id="ReasonText">Family</p>
+      <button type="button"
+              onclick="nextslide()">NEXT</button>
+    </div>
+</center>
+       </body>
+  <script>
+      var reason=[
+  "Royce Kumar",
+  "Kumar R",
+  "Praneetha"
+  
+];
+var images=[
+    "boy.jpg",
+  "father.png",
+  "mother.jpg"
+];
+
+    var i=0;
+function nextslide(){
+    if (i <= 2) {
+        document.getElementById("ReasonText").innerHTML=reason[i];
+  document.getElementById("album").src=
+    images[i];
+  i++;
+}
+
+}
+
+
+  </script>
+  <style>
+      #album{
+        width: 260px;
+    height: 500px;
+}
+      }
+  </style>
+</html>
